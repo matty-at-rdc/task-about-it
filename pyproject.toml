@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "task-about-it"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Cale <matt.cale@move.com>"]
+readme = "README.md"
+packages = [{include = "task_about_it"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rq = "^1.15.1"
+redis = "^4.6.0"
+faker = "^19.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.282"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
