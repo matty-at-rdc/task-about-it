@@ -15,6 +15,6 @@ It's another demo of how to start using RQ.
 - Inspect the job IDs
     - `python main.py info`
 - Process the jobs using RQ workers
-    - `python worker_high.py`
-    - `python worker_medium.py`
-    - `python worker_low.py`
+    - `python worker.py high`
+    - `python worker.py medium`
+    - `python worker.py low`

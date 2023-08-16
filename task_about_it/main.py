@@ -1,11 +1,10 @@
-import json
 import argparse
 
 from redis import Redis
 from rq import Queue
 from faker import Faker
 
-from lib.tasks import process_user
+from task_about_it.lib.tasks import process_user
 
 fake = Faker()
 redis_connection = Redis(host="localhost", port=5379, db=0)
